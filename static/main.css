@@ -1,0 +1,106 @@
+body{ 
+background-color:#dc8;
+font-size:16px; 
+margin:0; 
+padding:0; 
+color: #CD853F;
+}
+
+#header{
+background-color:#333;
+height:100px;
+font-size: 36px;
+text-align: center;
+padding-top: 20px;
+}
+
+#top{ 
+width:100%;
+background-color:#dc8; 
+height:50px;
+}
+
+#content { 
+padding-top:20px;
+background-color:#eec; 
+min-height:600px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:600px; /* for IE5.x and IE6 */
+}
+
+#footer { 
+clear:both;
+background-color:#333;
+height:100px;
+}
+
+#payr_table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 12px;
+width: 700px;
+text-align: left;
+border-collapse: collapse;
+margin: 5px;
+border-spacing: 0pt;
+}
+
+#payr_th {
+font-size: 13px;
+font-weight: normal;
+background: none repeat scroll 0% 0% rgb(77, 77, 77);
+border-top: 4px solid #C16C2F;
+border-bottom: 1px solid #FFFFFF;
+color: #FFF;s
+padding: 8px;
+}
+
+#payr_td {
+background: none repeat scroll 0% 0% #726B63;
+border-bottom: 1px solid #FFF;
+border-top: 1px solid transparent;
+color: #FFF;
+padding: 8px;
+vertical-align: top;
+}
+
+#pay_head_table {
+margin-left: 175px;
+}
+
+#pay_body_table {
+width:600px;
+}
+
+#employee_table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 12px;
+width: 700px;
+text-align: left;
+border-collapse: collapse;
+margin: 5px;
+border-spacing: 0pt;
+}
+
+#employee_th {
+font-size: 13px;
+font-weight: normal;
+background: none repeat scroll 0% 0% rgb(77, 77, 77);
+border-top: 4px solid #C16C2F;
+border-bottom: 1px solid #FFFFFF;
+color: #FFF;s
+padding: 8px;
+}
+
+#employee_td {
+background: none repeat scroll 0% 0% #726B63;
+border-bottom: 1px solid #FFF;
+border-top: 1px solid transparent;
+color: #FFF;
+padding: 8px;
+vertical-align: top;
+}
+
+#indent {
+margin-left:10px;
+}
+

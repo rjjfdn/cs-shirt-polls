@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<center><b><h3>Hi, {{ student.first_name }}! <br /></b>
+You can now vote! <br /> <br /></h3>
+
+{% if error_message %}
+    {{ error_message }} <br /> <br />
+{% endif %}
+
+<h5>Here are the designs for this year's <br />
+Computer Studies Shirt Design Contest! <br />
+Please press the radio button of your choice: <br /> <br /></h5>
+
+<form action="/polls/{{ student.id }}/voted/" method="POST">
+{% csrf_token %}
+<table border="0">
+<tr>
+    <td><input type="radio" name="choices" value="0" checked /></td>
+    <td>Please select from the choices</td>
+</tr>
+{% for i in choices %}
+<tr>
+    <td><input type="radio" name="choices" value="{{ i.choice_number }}" /></td>
+    <td><img src="/static/{{ i.choice_number }}.jpg" alt="Entry#{{ i.choice_number }}" width="800" height="600" /></td>
+</tr>
+{% endfor %}
+</table>
+<br />
+Voting: ID Number <label name="confirm">{{ student.id_number }}</label><br />
+<input type="submit" value="Submit Vote!" />
+</form></center>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<center>Hey, Admin! <br />
+Here are the results: <br /><br />
+    <ol>
+{% for c in choices %}
+        <li>Entry #{{ c.choice_number }} - {{ c.votes }}</li>
+{% endfor %}
+    </ol>
+</center>
+{% endblock %}

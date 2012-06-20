@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<center><h3><b>Hi Computer Studies Student! <br />
+Do you want to participate in the poll <br />
+for this year's Shirt Design Contest? <br />
+<br /></b></h3>
+Well, then please enter your information below:
+<br /><br />
+{% if error_message %}
+    {{ error_message }} <br />
+{% endif %}
+<form action="/polls/vote/" method="POST">
+{% csrf_token %}
+ID Number: <input type="text" name="id_number" /> <br />
+Last Name: <input type="text" name="last_name" /> <br />
+<input type="submit" value="Vote Now!" />
+</form></center>
+{% endblock %}
